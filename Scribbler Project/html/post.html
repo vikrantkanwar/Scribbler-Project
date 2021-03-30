@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <input type="button" value="Sign Up" id="signUp" class="headerBtns btns">
+        <input type="button" value="Sign In" id="signIn" class="headerBtns btns">
+        <a id="title" class="logo">ScriBBler</a>
+        <p class="catchphrase">Explore, Imagine, Create</p>
+    </div>
+    <!--Sign in modal-->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span id="signInClose" class="close">&times;</span>
+            <h1 class="a">Welcome Back!</h1>
+            <hr>
+            <form>
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+                    <button type="submit" class="signInBtn">Sign In</button>
+                    <p class="x">Not a member? <span class="c" onclick="signUp()">Sign Up</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Sign Up modal-->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span id="signUpClose" class="close">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <div class="container">
+                    <label><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Full Name" required>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+                    <label><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="postcontainer">
+        <p id="postheading">The Legacy of Metallica</p>
+        <!--input field for editing part -->
+        <input type="text" id="editing">
+        <div class="nameEdit">
+            <p id="name">Metallica</p>
+            <button id="edit" onclick="editPost()">Edit <img
+                    src="https://img.icons8.com/metro/15/ffffff/edit-property.png" /></button>
+            <button id="save" onclick="savePost()">Save <img
+                    src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png" /></button>
+        </div>
+        <p id="post">Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by
+            vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of
+            its career.[1][2] The band's fast tempos, instrumentals and aggressive musicianship made them one of the
+            founding "big four" bands of thrash metal, alongside Megadeth, Anthrax and Slayer. Metallica's current
+            lineup comprises founding members and primary songwriters Hetfield and Ulrich, longtime lead guitarist Kirk
+            Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth after being
+            fired from the band) and bassists Ron McGovney, Cliff Burton (who died in a bus accident in Sweden in 1986)
+            and Jason Newsted are former members of the band.
+
+            Metallica earned a growing fan base in the underground music community and won critical acclaim with its
+            first five albums.[3] The band's third album, Master of Puppets (1986), was described as one of the heaviest
+            and most influential thrash metal albums. Its eponymous fifth album, Metallica (1991), the band's first to
+            root predominantly in heavy metal, appealed to a more mainstream audience, achieving substantial commercial
+            success and selling over 16 million copies in the United States to date, making it the best-selling album of
+            the SoundScan era. After experimenting with different genres and directions in subsequent releases, the band
+            returned to its thrash metal roots with the release of its ninth album, Death Magnetic (2008), which drew
+            similar praise to that of the band's earlier albums.</p>
+        <!--textarea for edit-->
+        <textarea id="postedit"></textarea>
+        <button id="like" onclick="likePost()"><img
+                src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png" />Like</button>
+        <p id="likes">Be first one to like this!</p>
+        <textarea id="comments" placeholder="Leave a comment..."></textarea><br>
+        <button id="commentButton" onclick="postComment()">Comment</button>
+        <h3 id="commentHeading">All Comments</h3>
+        <div id="allComment">
+
+        </div>
+    </div>
+    <script src="../script/post.js"></script>
+    <script src="../script/header.js"></script>
+</body>
+
+</html>

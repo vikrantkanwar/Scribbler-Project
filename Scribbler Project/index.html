@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+</head>
+
+<body>
+    <div id="main-container-div">
+        <!--Header-->
+        <div class="header">
+            <input type="button" value="Sign Up" id="signUp" class="headerBtns btns">
+            <input type="button" value="Sign In" id="signIn" class="headerBtns btns">
+            <a id="title" class="logo">ScriBBler</a>
+            <p class="catchphrase">Explore, Imagine, Create</p>
+        </div>
+        <!--postButtons-->
+        <div class="postButtons">
+            <input type="button" class="postBtns" value="All Posts"
+                onclick="window.location.href='./html/bloglist.html'">
+            <input type="button" class="postBtns" value="Create Posts" id="createBtn">
+        </div>
+    </div>
+    <!--Sign in modal-->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span id="signInClose" class="close">&times;</span>
+            <h1 class="a">Welcome Back!</h1>
+            <hr>
+            <form>
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+                    <button type="submit" class="signInBtn">Sign In</button>
+                    <p class="x">Not a member? <span class="c" onclick="signUp()">Sign Up</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Sign Up modal-->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span id="signUpClose" class="close">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <div class="container">
+                    <label><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Full Name" required>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+                    <label><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Create Post modal -->
+    <div id="createPostModal" class="modal">
+        <div class="createPostModal-content">
+            <span id="createModalSpan" class="createPostClose">&times;</span>
+            <h1 class="b">Pen Your Post</h1>
+            <form class="form-container">
+                <label><b>Title:</b></label>
+                <input type="text" style="width:50%;">
+
+                <label><b>Content:</b></label>
+                <textarea></textarea>
+                <div style="text-align:center;">
+                    <button type="submit" class="d">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- js file for header -->
+    <script src="script\header.js"></script>
+    <!-- js file for index -->
+    <script src="script\index.js"></script>
+</body>
+
+</html>

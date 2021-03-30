@@ -1,0 +1,100 @@
+/*styling of post body*/
+.postcontainer{
+    margin: 0 5%;
+}
+/*styling of heading of post*/
+#postheading{
+    text-align: center;
+    font-size: 30px;
+}
+#editing{
+    margin:0px auto;
+    display:none;
+    height: 30px;
+    width: auto;
+    font-size: 30px;
+    border: 2px solid lightpink;
+}
+.nameEdit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Satisfy', cursive;
+}
+#name{
+    font-size: 20px;
+}
+#edit{
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+}
+#save{
+    display: none;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+}
+#commentButton{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+}
+#like{
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+    border-radius: 2px;
+    align-items: center;
+}
+#comments{
+    height: 100px;
+    width: 60%;
+}
+
+.comment{
+    background-color: white;
+    width: 100%;
+    height:40px;
+    align-content: center;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#allComment{
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+}
+#postedit{
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+    border: 2px solid lightblue;
+}
